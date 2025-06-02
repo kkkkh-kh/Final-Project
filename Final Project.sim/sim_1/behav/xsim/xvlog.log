@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/apple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apple
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/scores.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scores
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/snake.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module snake_direction
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/21508/Final Project/Final Project.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

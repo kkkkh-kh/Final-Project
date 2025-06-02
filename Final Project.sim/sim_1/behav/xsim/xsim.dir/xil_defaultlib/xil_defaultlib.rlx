@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/21508/Final Project/Final Project.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sim_1/new/apple_tb.v,1748845969,verilog,,,,apple_tb,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sim_1/new/game_tb.v,1748847873,verilog,,,,game_tb,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sim_1/new/score_tb.v,1748846987,verilog,,,,scores_tb,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sim_1/new/snake_tb.v,1748851022,verilog,,,,snake_direction_tb,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sim_1/new/top_tb.v,1748852932,verilog,,,,top_tb,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/apple.v,1748853823,verilog,,C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/game.v,,apple,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/game.v,1748848478,verilog,,C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/scores.v,,game,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/scores.v,1748846979,verilog,,C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/snake.v,,scores,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/snake.v,1748850559,verilog,,C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/top.v,,snake_direction,,,,,,,,
+C:/Users/21508/Final Project/Final Project.srcs/sources_1/new/top.v,1748852828,verilog,,C:/Users/21508/Final Project/Final Project.srcs/sim_1/new/top_tb.v,,top,,,,,,,,
