@@ -5,7 +5,7 @@ module scores (
     //input [1:0] game_state, //游戏状态
     output reg [11:0] score//当前分数
 );
-always @(posedge clk or posedge reset) begin
+always @(posedge clk or posedge  reset) begin
     if (reset) begin
         score <= 0; // Reset score to 0
     end else if (add) begin

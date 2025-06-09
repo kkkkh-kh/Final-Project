@@ -32,8 +32,8 @@ module top(
     wire [2:0] state;
     wire [9:0] head_x;
     wire [8:0] head_y;
-    reg [10*16-1:0] snake_x_bus;
-    reg [9*16-1:0] snake_y_bus;
+    wire [10*16-1:0] snake_x_bus;
+    wire [9*16-1:0] snake_y_bus;
     wire [4:0] snake_len;
     wire [9:0] apple_x;
     wire [8:0] apple_y;
@@ -41,6 +41,7 @@ module top(
     wire hit_wall;
     wire hit_self;
     wire [11:0] score;
+    wire [11:0]  highestScore;
     reg [11:0] rgb_out;
     
 
@@ -92,27 +93,27 @@ module top(
         .apple_y(apple_y),
         .add(add)
     );
-    vga_ctrl vgac (
-        .vga_clk(vga_clk),
-        .clrn(reset_stable),
-        .d_in({rgb_out[3:0],rgb_out[7:4],rgb_out[11:8]}),
-        .row_addr(row_addr),
-        .col_addr(col_addr),
-        .rdn(rdn),
-        .r(r),.g(g),.b(b),
-        .hs(hs),.vs(vs)
-    );
-    vga_screen_pic vgas (
-           .node_x(col_addr),
-           .node_y(row_addr),
-           .snake_x_bus(snake_x_bus),
-           .snake_y_bus(snake_y_bus),
-           .head_x(head_x),
-           .head_y(head_y),
-           .apple_x(apple_x),
-           .apple_y(apple_y),
-           .clk(div_res),
-           .game_state(game_state),
-           .rgb_out(rgb_out)
-    );
+//    vga_ctrl vgac (
+//        .vga_clk(vga_clk),
+//        .clrn(reset_stable),
+//        .d_in({rgb_out[3:0],rgb_out[7:4],rgb_out[11:8]}),
+//        .row_addr(row_addr),
+//        .col_addr(col_addr),
+//        .rdn(rdn),
+//        .r(r),.g(g),.b(b),
+//        .hs(hs),.vs(vs)
+//    );
+//    vga_screen_pic vgas (
+//           .node_x(col_addr),
+//           .node_y(row_addr),
+//           .snake_x_bus(snake_x_bus),
+//           .snake_y_bus(snake_y_bus),
+//           .head_x(head_x),
+//           .head_y(head_y),
+//           .apple_x(apple_x),
+//           .apple_y(apple_y),
+//           .clk(div_res),
+//           .game_state(game_state),
+//           .rgb_out(rgb_out)
+//    );
 endmodule

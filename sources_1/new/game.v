@@ -13,7 +13,7 @@ module game(
     localparam STATE_OVER = 2'b10; // 游戏结束
     localparam STATE_PLAYING = 2'b11; // 游戏进行中
     //reg [32:0] counter; //计数器
-    always@(posedge clk or posedge reset) begin
+    always@(posedge clk or negedge reset) begin
         if (reset) begin
             //counter <= 0;
             game_state <= STATE_START; // 初始化游戏状态为开始

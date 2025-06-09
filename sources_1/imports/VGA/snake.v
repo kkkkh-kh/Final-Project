@@ -76,7 +76,7 @@ always @(posedge clk or posedge reset) begin
         hit_wall <= 1'b0;
         hit_self <= 1'b0;
     end else begin
-        debug<=1;
+        debug<=1;//When run it pratically,edit it to 0
         counter <= counter + 1;
         if (counter >= (debug)?debug:speed && game_state == STATE_PLAYING) begin
             counter <= 0;

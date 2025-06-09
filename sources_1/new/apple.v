@@ -24,7 +24,7 @@ module apple (
     input clk,
     input reset, 
     input [9:0]snake_x,//蛇头x
-    input [9:0]snake_y,//蛇头y
+    input [8:0]snake_y,//蛇头y
     output reg [9:0] apple_x,//苹果x坐标
     output reg [9:0] apple_y,//苹果y坐标
     output reg add//判定为可加分
@@ -33,7 +33,7 @@ module apple (
     reg [9:0] random_y; //随机数y,有待根据屏幕尺寸修改
     reg [15:0] lfsr;
 
-always @(posedge clk or posedge reset) begin
+always @(posedge clk or posedge  reset) begin
     if (reset)
         lfsr <= 16'hACE1; // 初始种子
     else
@@ -44,7 +44,7 @@ end
 
 
 
-always @(posedge clk or posedge reset) begin
+always @(posedge clk or posedge  reset) begin
     if (reset) begin
         apple_x <= 10'd16; // Reset 
         apple_y <= 10'd20; // Reset 

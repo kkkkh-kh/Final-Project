@@ -15,16 +15,13 @@ module top_tb;
         .clk(clk),
         .reset(reset),
         .BTN(BTN),
-        .SW(SW),
-        .head_x(head_x),
-        .head_y(head_y),
-        .score(score)
+        .SW(SW)
     );
 
     // 产生时钟信号
     initial begin
         clk = 0;
-        forever #5 clk = ~clk; // 100MHz 时钟
+        forever #1 clk = ~clk; // 100MHz 时钟
     end
 
     // 主测试逻辑
@@ -34,12 +31,12 @@ module top_tb;
         $dumpvars(0, top_tb);
 
         // 初始化
-        reset = 0;
+        reset = 1;
         BTN = 4'b0000;
         SW = 3'b001; // 设置初始速度
         #20;
 
-        reset = 1; // 释放复位
+        reset = 0; // 释放复位
         #50;
 
         // 模拟按键按下（向右）
